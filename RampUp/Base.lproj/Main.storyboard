@@ -29,6 +29,9 @@
                                     <constraint firstAttribute="height" constant="30" id="jtA-oa-zed"/>
                                 </constraints>
                                 <state key="normal" title="Select a ramp"/>
+                                <connections>
+                                    <action selector="selectRampTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="UIt-WM-GLM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
