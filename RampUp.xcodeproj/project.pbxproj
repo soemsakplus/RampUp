@@ -13,6 +13,7 @@
 		6609715621154E20009B80CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6609715421154E20009B80CE /* Main.storyboard */; };
 		6609715821154E21009B80CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6609715721154E21009B80CE /* Assets.xcassets */; };
 		6609715B21154E21009B80CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6609715921154E21009B80CE /* LaunchScreen.storyboard */; };
+		6609716321156A99009B80CE /* RampPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6609716221156A99009B80CE /* RampPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6609715721154E21009B80CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6609715A21154E21009B80CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6609715C21154E21009B80CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6609716221156A99009B80CE /* RampPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				6609714E21154E20009B80CE /* AppDelegate.swift */,
 				6609715021154E20009B80CE /* art.scnassets */,
 				6609715221154E20009B80CE /* ViewController.swift */,
+				6609716221156A99009B80CE /* RampPickerViewController.swift */,
 				6609715421154E20009B80CE /* Main.storyboard */,
 				6609715721154E21009B80CE /* Assets.xcassets */,
 				6609715921154E21009B80CE /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6609715321154E20009B80CE /* ViewController.swift in Sources */,
+				6609716321156A99009B80CE /* RampPickerViewController.swift in Sources */,
 				6609714F21154E20009B80CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +289,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K29ACE56SR;
 				INFOPLIST_FILE = RampUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K29ACE56SR;
 				INFOPLIST_FILE = RampUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

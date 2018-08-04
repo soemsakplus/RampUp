@@ -1,27 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A278a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BrB-h1-WRS">
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="RampUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5vd-gS-nP6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </arscnView>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8FK-8N-hHt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlt-4J-1SA">
+                                <rect key="frame" x="264" y="617" width="95" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="dqw-gh-ccj"/>
+                                    <constraint firstAttribute="height" constant="30" id="jtA-oa-zed"/>
+                                </constraints>
+                                <state key="normal" title="Select a ramp"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f3E-ZO-Exe" firstAttribute="bottom" secondItem="Jlt-4J-1SA" secondAttribute="bottom" constant="20" id="VXx-Pr-6ly"/>
+                            <constraint firstItem="8FK-8N-hHt" firstAttribute="trailing" secondItem="f3E-ZO-Exe" secondAttribute="trailing" id="WwA-3O-L3P"/>
+                            <constraint firstItem="8FK-8N-hHt" firstAttribute="bottom" secondItem="f3E-ZO-Exe" secondAttribute="bottom" id="Zh6-Hs-CLj"/>
+                            <constraint firstItem="f3E-ZO-Exe" firstAttribute="trailing" secondItem="Jlt-4J-1SA" secondAttribute="trailing" constant="16" id="e4k-OE-DCd"/>
+                            <constraint firstItem="8FK-8N-hHt" firstAttribute="leading" secondItem="f3E-ZO-Exe" secondAttribute="leading" id="go9-03-IiH"/>
+                            <constraint firstItem="8FK-8N-hHt" firstAttribute="top" secondItem="5vd-gS-nP6" secondAttribute="top" id="ymm-2n-Y3O"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f3E-ZO-Exe"/>
+                    </view>
                     <connections>
-                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="sceneView" destination="8FK-8N-hHt" id="A10-Rq-XGi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="115.59220389805098"/>
         </scene>
     </scenes>
 </document>
