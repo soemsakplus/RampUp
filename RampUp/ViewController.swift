@@ -15,6 +15,8 @@ UIPopoverPresentationControllerDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
+    var selectedRampName: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -85,12 +87,17 @@ UIPopoverPresentationControllerDelegate {
     
     @IBAction func selectRampTapped(_ sender: UIButton) {
         let rampPickerVC = RampPickerViewController(size: CGSize(width: 250, height: 500))
-        rampPickerVC.rampPlacerVC = self
+        rampPickerVC.viewController = self
         rampPickerVC.modalPresentationStyle = .popover
         rampPickerVC.popoverPresentationController?.delegate = self
         present(rampPickerVC, animated: true, completion: nil)
         rampPickerVC.popoverPresentationController?.sourceView = sender
         rampPickerVC.popoverPresentationController?.sourceRect = sender.bounds
+    }
+    
+    func onRampSelected(_ rampName: String) {
+        selectedRampName = rampName
+        print(rampName)
     }
     
 }
