@@ -43,7 +43,19 @@ class RampPickerViewController: UIViewController {
         camera.usesOrthographicProjection = true
         scene.rootNode.camera = camera
         
-        let rotate = SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: CGFloat(0.05 * Double.pi), z: 0, duration: 0.1))
+        let pipe = Ramp.getPipe()
+        Ramp.startRotation(node: pipe)
+        scene.rootNode.addChildNode(pipe)
+        
+        let pyramid = Ramp.getPyramid()
+        Ramp.startRotation(node: pyramid)
+        scene.rootNode.addChildNode(pyramid)
+        
+        let gun = Ramp.getGun()
+        Ramp.startRotation(node: gun)
+        scene.rootNode.addChildNode(gun)
+        
+        /*let rotate = SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: CGFloat(0.05 * Double.pi), z: 0, duration: 0.1))
         
         let obj = SCNScene(named: "art.scnassets/pipe.dae")!
         let node = obj.rootNode.childNode(withName: "pipe", recursively: true)!
@@ -64,7 +76,7 @@ class RampPickerViewController: UIViewController {
         node2.scale = SCNVector3Make(0.1, 0.1, 0.1)
         node2.position = SCNVector3Make(-1, -1.9, -1)
         node2.runAction(rotate)
-        scene.rootNode.addChildNode(node2)
+        scene.rootNode.addChildNode(node2)*/
     }
 
     override func didReceiveMemoryWarning() {
